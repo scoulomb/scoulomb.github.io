@@ -51,7 +51,7 @@
       "website": "https://www.amadeus-hospitality.com/hotel-distribution-services-software/",
       "startDate": "2016-07-15",
       "endDate": "2018-02-15",
-      "summary": "We were working on modules managing hotel segment of Passenger Name Records  database. Those module are part of the Amadeus GDS (Global Distribution System). It aims at connecting travel agent to hoteliers's CRS (Central Reservation System). I designed and implemented new features. I also participated to maintenance activities and on call roster to ensure high service level agreement. Technology used: C++, Python, Oracle"
+      "summary": "We were working on modules managing hotel segment of Passenger Name Records  database. Those modules are part of the Amadeus GDS (Global Distribution System). It aims at connecting travel agent to hoteliers's CRS (Central Reservation System). I designed and implemented new features. I also participated to maintenance activities and on call roster to ensure high service level agreement. Technology used: C++, Python, Oracle"
     },
     {
       "company": "Amadeus Hospitality",
