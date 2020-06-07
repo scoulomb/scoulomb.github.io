@@ -8,7 +8,7 @@
     "email": "sylvaincoulombel@gmail.com",
     "phone": "+ 33 6 30 97 33 48",
     "website": "https://scoulomb.github.io",
-    "summary": "DevOps engineer, currently working for Amadeus. I love learning new things!",
+    "summary": "I am a 30 year old software engineer with strong interest in DevOps. I am currently working for Amadeus. I enjoy learning new technologies!",
     "location": {
       "address": "62 Boulevard du President Wilson",
       "postalCode": "06600",
@@ -90,17 +90,19 @@
     {
       "institution": "Link\u00f6ping University",
       "area": "Computer Science",
-      "studyType": "Master's in computer science",
+      "studyType": "Master of Science",
       "startDate": "2013-08-01",
       "endDate": "2014-07-31",
-      "gpa": "GPA 3.9"
+      "gpa": "GPA 3.9",
+      "url": "https://liu.se/en/education/program/6mics"
     },
     {
       "institution": "UTC",
       "area": "Engineering",
-      "studyType": "Ing\u00e9nieur UTC, sp\u00e9cialit\u00e9 informatique",
+      "studyType": "Ing\u00e9nieur dipl\u00f4m\u00e9 de l'UTC sp\u00e9cialit\u00e9 informatique",
       "startDate": "2009-09-01",
-      "endDate": "2014-06-30"
+      "endDate": "2014-06-30",
+      "url": "https://www.utc.fr/en/courses-and-training/the-utc-engineering-diploma.html"
     },
     {
       "institution": "Shanghai University",
