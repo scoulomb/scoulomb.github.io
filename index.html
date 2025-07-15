@@ -1,175 +1,124 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sylvain COULOMBEL - CV</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 1em;
-    background-color: #fff;
-    color: #000;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-  }
-  header {
-    text-align: center;
-    margin-bottom: 2em;
-  }
-  section {
-    margin-bottom: 1.5em;
-  }
-  h2 {
-    cursor: pointer;
-    margin: 0;
-    padding: 0.5em;
-    background-color: #eee;
-    border-radius: 5px;
-  }
-  .dark-mode h2 {
-    background-color: #333;
-  }
-  .content {
-    padding: 0.5em 1em;
-    display: none;
-  }
-  .active .content {
-    display: block;
-  }
-  button.toggle-dark {
-    position: fixed;
-    top: 1em;
-    right: 1em;
-    padding: 0.5em;
-  }
-  a {
-    color: inherit;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sylvain Coulombel - Landing Page</title>
+  <style>
+    :root {
+      --bg-light: #f0f0f0;
+      --bg-dark: #1e1e1e;
+      --text-light: #1e1e1e;
+      --text-dark: #f0f0f0;
+      --button-gradient: linear-gradient(135deg, #6e6e6e, #a0a0a0);
+      --button-gradient-dark: linear-gradient(135deg, #3a3a3a, #5a5a5a);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .nav-button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: var(--button-gradient);
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .nav-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    }
+
+    body.dark-mode .nav-button {
+      background: var(--button-gradient-dark);
+    }
+
+    .toggle-container {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .toggle-button {
+      background: none;
+      border: 2px solid currentColor;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .nav-button {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-<button class="toggle-dark" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-<header>
-<h1>Sylvain COULOMBEL</h1>
-<p>Engineering Manager</p>
-<p>Email: sylvaincoulombel@gmail.com | Phone: +33 6 30 97 33 48</p>
-<p><a href="https://coulombel.net">Homepage</a> | <a href="https://github.com/scoulomb">GitHub</a> | <a href="https://linkedin.com/in/sylvain-coulombel">LinkedIn</a></p>
-<p>06600 Antibes, Region Sud, France</p>
-</header>
-<div id="cv-content">
-<!-- Sections will be inserted here -->
-<section><h2>Professional Summary</h2><div class="content">
-Experienced and passionate software engineering manager. Currently contributing to infrastructure automation at Amadeus, I thrive on learning new technologies and delivering scalable, efficient solutions.
+  <header>
+    <h1>Sylvain Coulombel</h1>
+    <p>Welcome to my personal landing page</p>
+  </header>
 
-</div></section>
-<section><h2>Professional Experience</h2><div class="content">
-<div><h3>Engineering Manager and SAFe Product Owner -- Links in the Cloud Automation</h3><p><em>August 2021--Present</em><br/>Amadeus, Identity and Access Platform</p>
-<ul>
-<li><strong>August 2021 -- September 2022</strong>:
-    <ul>
-<li>Took on managerial responsibility for a team, successfully delivering the final phase of SI (Amadeus ESB) configuration automation.
-    </li></ul>
-<li><strong>September 2022 -- Present</strong>:
-    <ul>
-<li>Pivoted the team’s focus toward cloud migration in alignment with Amadeus’ strategic initiative to decommission its on-premise data center.
-      <li>Scaled and built a cross-site engineering team (\textasciitilde14 members) across Nice, Munich, and Bangalore.
-      <li>Led the development of an automation framework to migrate over 15,000 connectivity endpoints to the cloud edge (Equinix POP).
-      <li>Streamlined redeployment of complex network components in the cloud with a blueprint-driven model.
-      <li>Initiated a self-service platform to automate the lifecycle of cloud-based connectivity links.
-      <li>Oversaw the Astek DBS external service, managing external SI configuration and ensuring alignment with internal standards.
-    </li></li></li></li></li></li></ul>
-</li></li></ul>
-</div>
-<div><h3>Senior Software Engineer</h3><p><em>2019--2021</em><br/><a href="https://developers.amadeus.com/">Amadeus, Infrastructure and Services</a></p>
-<ul>
-<li>Led automation of network configurations including load balancers, DNS, and firewalls.
-  <li>Developed a self-service API to streamline network operations and reduce manual effort.
-  <li>Mentored the network team and actively promoted network automation best practices, with regular long stay trip in Munich.
-  <li>Provided framework development, architectural guidance
-  <li><strong>Technologies:</strong> Python, Docker, Karate, Kubernetes, Jenkins, Ansible, F5, Infoblox.
-</li></li></li></li></li></ul>
-</div>
-<div><h3>Senior Software Engineer</h3><p><em>2018--2019</em><br/><a href="https://developers.amadeus.com/">Amadeus, API and Web Services Platform</a></p>
-<ul>
-<li>Designed and implemented an internal REST API to automate SI configurations.
-  <li>Supported the Open API initiative (Amadeus for developer)and transitioned to an application SRE role.
-  <li>Deployed the solution in the cloud and established operational practices.
-  <li><strong>Technologies:</strong> OpenShift, Java, SoapUI.
-</li></li></li></li></ul>
-</div>
-<div><h3>Software Engineer</h3><p><em>2016--2018</em><br/><a href="https://www.amadeus-hospitality.com/hotel-distribution-services-software/">Amadeus Hospitality</a></p>
-<ul>
-<li>Worked on Hotel's Amadeus GDS backend handling hotel segment of Passenger Name Records database.
-  <li>Designed and implemented new features and participated in maintenance.
-  <li>Supported high availability through on-call duties.
-  <li><strong>Technologies:</strong> C++, Python, Oracle.
-</li></li></li></li></ul>
-</div>
-<div><h3>Software Engineer</h3><p><em>2014--2016</em><br/><a href="https://www.amadeus-hospitality.com/central-reservations-system-software/crs/">Amadeus Hospitality</a></p>
-<ul>
-<li>Built reservation module features and was a key contributor to the business object model for the new cloud-native Central Reservation System..
-  <li>Served as back-end developer and Scrum Master for one year.
-  <li><strong>Technologies:</strong> C++, Python, Couchbase.
-</li></li></li></ul>
-</div>
-<div><h3>Software Engineering Intern</h3><p><em>2014</em><br/><a href="https://www.amadeus-hospitality.com/">Amadeus Hospitality</a></p>
-<ul>
-<li><a href="https://liu.diva-portal.org/smash/record.jsf?pid=diva2\%3A783288\&amp;dswid=1797">Explored the application of NoSQL databases for hotel reservation management.</a>
-<li><strong>Technologies:</strong> Couchbase, MongoDB.
-</li></li></ul>
-</div>
-<div><h3>User Experience Design Intern</h3><p><em>2012--2013</em><br/><a href="http://www.cea.fr/">CEA List</a></p>
-<ul>
-<li>Designed and developed an interactive multimedia system for seamless interaction across screen sizes and modalities.
-  <li><strong>Technologies:</strong> Android, Python, Kinect.
-</li></li></ul>
-</div>
-<div><h3>Factory Intern</h3><p><em>2009</em><br/><a href="https://www.safran-group.com/">Snecma, Groupe Safran</a></p>
-<ul>
-<li>Worked on the assembly line for Rafale aircraft engines.
-</li></ul>
-</div>
-</div></section>
-<section><h2>Education</h2><div class="content">
-<div><h3>Master of Science in Computer Science</h3><p><em>2013--2014</em><br/>Linköping University</p></div>
-<div><h3>Engineering Degree in Computer Science</h3><p><em>2009--2014</em><br/>Université de Technologie de Compiègne (UTC)</p></div>
-<div><h3>Chinese Language and Culture Program</h3><p><em>2012</em><br/>Shanghai University</p></div>
-</div></section>
-<section><h2>Technical Skills</h2><div class="content">
-<p><strong>Site Reliability Engineering:</strong> Kubernetes, OpenShift, Docker, CI/CD Pipelines</p>
-<p><strong>Back-end Development:</strong> Python, Java, C++</p>
-</div></section>
-<section><h2>Languages</h2><div class="content">
-<p><strong>French:</strong> Native</p>
-<p><strong>English:</strong> Advanced Proficiency</p>
-</div></section>
-<section><h2>Certifications</h2><div class="content">
-<p><strong>2020:</strong> Certified Kubernetes Application Developer (CKAD), Cloud Native Computing Foundation</p>
-<p><strong>2016:</strong> Introduction to Global Hospitality Management, edX</p>
-<p><strong>2015:</strong> Certified Scrum Master, Scrum Alliance</p>
-<p><strong>2014:</strong> MongoDB for Developers (M101P) and DBAs (M102), MongoDB University</p>
-</div></section>
-<section><h2>Interests</h2><div class="content">
-<p><strong>Sports:</strong> Skiing, Running, Swimming</p>
-<p><strong>Free time:</strong> Home automation, Music technology</p>
-</div></section>
-</div>
-<script>
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-}
-document.querySelectorAll('h2').forEach(h => {
-  h.addEventListener('click', () => {
-    h.parentElement.classList.toggle('active');
-  });
-});
-</script>
+  <nav>
+    <a href="./cv_website.html" class="nav-button">My Resume</a>
+    <a href="https://www.linkedin.com/in/sylvain-coulombel" class="nav-button" target="_blank">LinkedIn</a>
+    <a href="https://github.com/scoulomb" class="nav-button" target="_blank">GitHub</a>
+  </nav>
+
+  <div class="toggle-container">
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>

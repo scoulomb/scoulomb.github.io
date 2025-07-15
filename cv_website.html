@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sylvain COULOMBEL - CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 1em;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #000;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    h1, h2 {
+      margin-top: 1em;
+    }
+    .section {
+      margin-bottom: 1.5em;
+    }
+    .toggle-button {
+      float: right;
+      margin-top: -2em;
+    }
+    .collapsible {
+      background-color: #eee;
+      color: #000;
+      cursor: pointer;
+      padding: 0.5em;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
+    }
+    .active, .collapsible:hover {
+      background-color: #ccc;
+    }
+    .content {
+      padding: 0 1em;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f9f9f9;
+    }
+    .dark-mode .collapsible {
+      background-color: #333;
+      color: #fff;
+    }
+    .dark-mode .active, .dark-mode .collapsible:hover {
+      background-color: #555;
+    }
+    .dark-mode .content {
+      background-color: #222;
+    }
+    a {
+      color: #0645ad;
+    }
+    .dark-mode a {
+      color: #8ab4f8;
+    }
+    .cvitem {
+      margin-bottom: 0.5em;
+    }
+    .toggle-dark {
+      position: fixed;
+      top: 1em;
+      right: 1em;
+      padding: 0.5em 1em;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-dark" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <header>
+    <h1>Sylvain COULOMBEL</h1>
+    <p>Engineering Manager</p>
+    <p>Email: sylvaincoulombel@gmail.com</p>
+    <p>Website: <a href="http://coulombel.net">coulombel.net</a> | GitHub: <a href="https://github.com/scoulomb">scoulomb</a> | LinkedIn: <a href="https://linkedin.com/in/sylvain-coulombel">sylvain-coulombel</a></p>
+    <p>06600 Antibes, Region Sud, France</p>
+  </header>
+
+  <div class="section">
+    <button class="collapsible">Professional Summary</button>
+    <div class="content">
+      <p>Experienced and passionate software engineering manager. Currently contributing to infrastructure automation at Amadeus, I thrive on learning new technologies and delivering scalable, efficient solutions.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="collapsible">Professional Experience</button>
+    <div class="content">
+      <p><strong>Engineering Manager and SAFe Product Owner -- Links in the Cloud Automation</strong>, Amadeus, Identity and Access Platform (August 2021–Present)</p>
+      <ul>
+        <li><strong>August 2021 – September 2022</strong>:
+          <ul>
+            <li>Took on managerial responsibility for a team, successfully delivering the final phase of SI (Amadeus ESB) configuration automation.</li>
+          </ul>
+        </li>
+        <li><strong>September 2022 – Present</strong>:
+          <ul>
+            <li>Pivoted the team’s focus toward cloud migration in alignment with Amadeus’ strategic initiative to decommission its on-premise data center.</li>
+            <li>Scaled and built a cross-site engineering team (14 members) across Nice, Munich, and Bangalore.</li>
+            <li>Led the development of an automation framework to migrate over 15,000 connectivity endpoints to the cloud edge (Equinix POP).</li>
+            <li>Streamlined redeployment of complex network components in the cloud with a blueprint-driven model.</li>
+            <li>Initiated a self-service platform to automate the lifecycle of cloud-based connectivity links.</li>
+            <li>Oversaw the Astek DBS external service, managing external SI configuration and ensuring alignment with internal standards.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Senior Software Engineer</strong>, <a href="https://developers.amadeus.com/">Amadeus, Infrastructure and Services</a> (2019–2021)</p>
+      <ul>
+        <li>Led automation of network configurations including load balancers, DNS, and firewalls.</li>
+        <li>Developed a self-service API to streamline network operations and reduce manual effort.</li>
+        <li>Mentored the network team and actively promoted network automation best practices, with regular long stay trip in Munich.</li>
+        <li>Provided framework development, architectural guidance</li>
+        <li><strong>Technologies:</strong> Python, Docker, Karate, Kubernetes, Jenkins, Ansible, F5, Infoblox.</li>
+      </ul>
+      <p><strong>Senior Software Engineer</strong>, <a href="https://developers.amadeus.com/">Amadeus, API and Web Services Platform</a> (2018–2019)</p>
+      <ul>
+        <li>Designed and implemented an internal REST API to automate SI configurations.</li>
+        <li>Supported the Open API initiative (Amadeus for developer) and transitioned to an application SRE role.</li>
+        <li>Deployed the solution in the cloud and established operational practices.</li>
+        <li><strong>Technologies:</strong> OpenShift, Java, SoapUI.</li>
+      </ul>
+      <p><strong>Software Engineer</strong>, <a href="https://www.amadeus-hospitality.com/hotel-distribution-services-software/">Amadeus Hospitality</a> (2016–2018)</p>
+      <ul>
+        <li>Contributed to the hotel reservation module of Amadeus (Global Distribution System), enabling global distribution of hotel Central Reservation Systems (CRS) and aggregators content to travel agents and OTAs through a unified external marketplace</li>
+        <li>Implemented new functionalities—including Value Hotel, Deferred Payment, Passenger Name Record (PNR) integrations—and contributed to ongoing maintenance activities.</li>
+        <li>Supported high availability through on-call duties.</li>
+        <li><strong>Technologies:</strong> C++, Python, Oracle.</li>
+      </ul>
+      <p><strong>Software Engineer</strong>, <a href="https://www.amadeus-hospitality.com/central-reservations-system-software/crs/">Amadeus Hospitality</a> (2014–2016)</p>
+      <ul>
+        <li>Team member contributing to the reservation module of the new cloud-native Amadeus Central Reservation System (CRS), the internal platform used by hotels to manage bookings.</li>
+        <li>Key contributor to the business object model.</li>
+        <li>Served as back-end developer and Scrum Master for one year.</li>
+        <li><strong>Technologies:</strong> C++, Python, Couchbase.</li>
+      </ul>
+      <p><strong>Software Engineering Intern</strong>, <a href="https://www.amadeus-hospitality.com/">Amadeus Hospitality</a> (2014)</p>
+      <ul>
+        <li><a href="https://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A783288&amp;dswid=1797">Explored the application of NoSQL databases for hotel reservation management.</a></li>
+        <li><strong>Technologies:</strong> Couchbase, MongoDB.</li>
+      </ul>
+      <p><strong>User Experience Design Intern</strong>, <a href="http://www.cea.fr/">CEA List</a> (2012–2013)</p>
+      <ul>
+        <li>Designed and developed an interactive multimedia system for seamless interaction across screen sizes and modalities.</li>
+        <li><strong>Technologies:</strong> Android, Python, Kinect.</li>
+      </ul>
+      <p><strong>Factory Intern</strong>, <a href="https://www.safran-group.com/">Snecma, Groupe Safran</a> (2009)</p>
+      <ul>
+        <li>Worked on the assembly line for Rafale aircraft engines.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="collapsible">Education</button>
+    <div class="content">
+      <ul>
+        <li>Master of Science in Computer Science, Linköping University (2013–2014)</li>
+        <li>Engineering Degree in Computer Science, Université de Technologie de Compiègne (UTC) (2009–2014)</li>
+        <li>Chinese Language and Culture Program, Shanghai University (2012)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="collapsible">Technical Skills</button>
+    <div class="content">
+      <ul>
+        <li><strong>Site Reliability Engineering:</strong> Kubernetes, OpenShift, Docker, CI/CD Pipelines</li>
+        <li><strong>Back-end Development:</strong> Python, Java, C++</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="collapsible">Languages</button>
+    <div class="content">
+      <ul>
+        <li>French: Native</li>
+        <li>English: Advanced Proficiency</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="collapsible">Certifications</button>
+    <div class="content">
+      <ul>
+        <li>2023: LFC131: Green Software for Practitioners, The Linux Foundation. Certificate ID: LF-q0f37iyozo <a href="https://www.credly.com/badges/6ae3f56d-0813-463f-81f4-db2ba10d1743/public_url">[Credly link]</a></li>
+        <li>2022: SAFe Product Owner/Product Manager (POPM 5.1), Scaled Agile Inc. <a href="https://www.credly.com/badges/3305c8a4-9eb8-4be8-920e-25c4e1450d0b/linked_in_profile">[Credly link]</a></li>
+        <li>2020: Certified Kubernetes Application Developer (CKAD), The Linux Foundation. Certificate ID: CKAD-2000-004607-0100 <a href="https://www.credly.com/badges/2343b327-4246-4761-a28e-0c306a7c6601/public_url">[Credly link]</a></li>
+        <li>2016: Introduction to Global Hospitality Management, edX</li>
+        <li>2015: Certified Scrum Master, Scrum Alliance</li>
+        <li>2014: MongoDB for Developers (M101P) and DBAs (M102), MongoDB University</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="collapsible">Interests</button>
+    <div class="content">
+      <ul>
+        <li><strong>Sports:</strong> Skiing, Running, Swimming</li>
+        <li><strong>Free time:</strong> Home automation, Music technology</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
